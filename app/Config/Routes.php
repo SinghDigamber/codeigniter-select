@@ -33,8 +33,8 @@ $routes->setAutoRoute(true);
 
 
 $routes->get('/', 'AutocompleteSearch::index');
+$routes->match(['get', 'post'], 'AutocompleteSearch/ajaxSearch', 'AutocompleteSearch::ajaxSearch');
 
-// $routes->get('ajax-search', 'AutocompleteSearch::search');
 
 /**
  * --------------------------------------------------------------------
